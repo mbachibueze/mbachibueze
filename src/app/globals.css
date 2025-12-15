@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+/* Root theme (default = dark mode) */
+:root {
+  --background: #0f0f0f;
+  --text: #ffffff;
+}
+
+/* Light mode */
+.light {
+  --background: #ffffff;
+  --text: #0f0f0f;
+}
+
+/* Dark mode */
+.dark {
+  --background: #0f0f0f;
+  --text: #ffffff;
+}
+
+/* Apply variables globally */
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+
+
+
+
+.stack-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.marquee-content {
+  animation: scroll-loop 25s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.5rem))
+  }
+}
+
+
+
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #1dffd9; /* thumb color, track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+  background: #1f8bf7; /* Track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #17dbba; /* Thumb color */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button:single-button {
+  display: none;
+  height: 0;
+  width: 0;
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ea2626; /* Darker thumb on hover */
+}
+
+/* Your glass style */
+.glass {
+  background: rgba(4, 158, 226, 0.1490196078);
+  border-radius: 110px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #049ee24d;
+}
+
+.glass2 {
+  border-radius: 100px;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #ffffff4d;
+}
+
+.glass3 {
+  background: #5d5d5d9e;
+  border-radius: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(93, 93, 93, 0.3);
+}
+
+.glass4 {
+  background: rgba(5, 48, 76, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(5, 48, 76, 0.3);
+}
+
+.glass5 {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #ffffff4d;
+}
+
+.glass6 {
+  background: rgba(5, 48, 76, 0.588);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(5, 48, 76, 0.3);
+}
+
+.glass7 {
+  background: #05304cb2;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #05304c4d;
+}
+
+.background-gradient {
+  /* Light mode */
+  background: radial-gradient(
+    circle at top,
+    rgba(119, 214, 255, 1) 0%,
+    rgba(119, 214, 255, 0.95) 5%,
+    rgba(119, 214, 255, 0.88) 10%,
+    rgba(119, 214, 255, 0.8) 15%,
+    rgba(119, 214, 255, 0.72) 20%,
+    rgba(119, 214, 255, 0.64) 25%,
+    rgba(119, 214, 255, 0.56) 30%,
+    #77d6ff7a 35%,
+    rgba(119, 214, 255, 0.4) 40%,
+    rgba(119, 214, 255, 0.32) 45%,
+    rgba(119, 214, 255, 0.24) 50%,
+    rgba(119, 214, 255, 0.18) 55%,
+    rgba(119, 214, 255, 0.14) 60%,
+    rgba(119, 214, 255, 0.1) 65%,
+    rgba(119, 214, 255, 0.07) 70%,
+    rgba(119, 214, 255, 0.045) 73%,
+    rgba(119, 214, 255, 0.025) 76%,
+    rgba(119, 214, 255, 0.012) 78%,
+    rgba(119, 214, 255, 0.005) 79%,
+    rgba(119, 214, 255, 0) 80%
+  );
+}
+
+.dark .background-gradient {
+  /* Dark mode */
+  background: radial-gradient(
+    circle at top,
+    #05304c 0%,
+    rgba(5, 48, 76, 0.95) 5%,
+    rgba(5, 48, 76, 0.88) 10%,
+    rgba(5, 48, 76, 0.8) 15%,
+    rgba(5, 48, 76, 0.72) 20%,
+    rgba(5, 48, 76, 0.64) 25%,
+    rgba(5, 48, 76, 0.56) 30%,
+    rgba(5, 48, 76, 0.48) 35%,
+    rgba(5, 48, 76, 0.4) 40%,
+    rgba(5, 48, 76, 0.32) 45%,
+    rgba(5, 48, 76, 0.24) 50%,
+    rgba(5, 48, 76, 0.18) 55%,
+    rgba(5, 48, 76, 0.14) 60%,
+    rgba(5, 48, 76, 0.1) 65%,
+    rgba(5, 48, 76, 0.07) 70%,
+    rgba(5, 48, 76, 0.045) 73%,
+    rgba(5, 48, 76, 0.025) 76%,
+    rgba(5, 48, 76, 0.012) 78%,
+    rgba(5, 48, 76, 0.005) 79%,
+    rgba(5, 48, 76, 0) 80%
+  );
+}
