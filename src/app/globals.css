@@ -138,6 +138,15 @@ body {
   border: 1px solid #05304c4d;
 }
 
+.glass8 {
+  background: rgba(5, 48, 76, 0.26);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(5, 48, 76, 0.3);
+}
+
 .background-gradient {
   /* Light mode */
   background: radial-gradient(

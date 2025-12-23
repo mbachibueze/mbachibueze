@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Mail } from "lucide-react";
-import { FaXTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa6";
 
 const contacts = [
   { href: "https://github.com/mbachibueze", icon: FaGithub },
@@ -11,6 +11,7 @@ const contacts = [
     href: "https://www.linkedin.com/in/mba-chibueze-8118a9252",
     icon: FaLinkedinIn,
   },
+  { href: "https://wa.me/+2347012108363", icon: FaWhatsapp },
   { href: "mailto:mbachibueze27@gmail.com", icon: Mail },
 ];
 

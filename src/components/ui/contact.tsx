@@ -48,7 +48,7 @@ const Contact = () => {
           >
             <CalendarDays size={18}  />
 
-            <p className="whitespace-nowrap ">Schedule a call</p>
+            <p className="whitespace-nowrap ">Schedule a Meeting</p>
 
             {/* Chevron container */}
             <div className="overflow-hidden w-0 group-hover:w-5 transition-all duration-300">

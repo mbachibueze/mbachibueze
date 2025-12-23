@@ -31,7 +31,7 @@ export const Projects: Project[] = [
     techStack: ["Next.js", "Typescript", "Tailwind"],
     link: "https://techcrib.vercel.app/",
   },
-      {
+  {
     id: "caretrack5",
     imageSrc: "/caretrack.png",
     title: "CareTrack – Vaccination  Tracker",
@@ -41,5 +41,16 @@ export const Projects: Project[] = [
     
     techStack: ["Next.js", "Typescript", "Firebase", "Framer Motion", "EmailJs", "Tailwind"],
     link: "https://caretrack-25.vercel.app/",
+  },
+    {
+    id: "eazziExchange",
+    imageSrc: "/eazii.png",
+    title: "Eazzi Exchange – Currency Exchange Platform",
+    shortDescription:
+      "A responsive currency exchange platform built with HTML, CSS and Javascript that allows users to convert currencies, track exchange rates, and manage transactions with a clean and intuitive interface.",
+    longDescription: `Eazzi Exchange is a modern currency exchange platform designed to provide users with an efficient and secure way to convert currencies. Built using Next.js, CSS, Javascript, and  AOS - Animate on Scroll, the platform offers a seamless user experience with real-time exchange rate updates, transaction history tracking, and a responsive design that works across all devices. The application features a clean UI with smooth animations and intuitive navigation, making it easy for users to manage their currency exchanges.`,
+    
+    techStack: ["Html", "CSS", "AOS - Animate on Scroll"],
+    link: "https://eazii-exchange-mtap.vercel.app/",
   },
 ]

@@ -15,6 +15,7 @@ import { MoveRight } from 'lucide-react';
 import Link from "next/link";
 import Stack from "../components/ui/stack";
 import Contact from "../components/ui/contact";
+import Message from "../components/ui/message";
 
 export default function Home() {
 
@@ -54,6 +55,8 @@ export default function Home() {
       <Stack/>
 
       <Contact/>
+
+      <Message/>
 
       <Footer/>
 
