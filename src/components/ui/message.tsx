@@ -14,7 +14,7 @@ const Message = () => {
      className='w-[90%] lg:w-[60%] my-5 mt-10 flex flex-col '
     >
       <div
-        className='  p-5 py-8 w-full'
+        className='   w-full'
       >
         <h1 className='text-center text-2xl font-bold mb-4'>Contact Me</h1>
         <div className='grid gap-4 lg:grid-cols-2 grid-cols-1 [&_input]:outline-none [&_input]:shadow-md [&_input]:p-3 [&_input]:rounded-md [&_input]:w-full text-start'>

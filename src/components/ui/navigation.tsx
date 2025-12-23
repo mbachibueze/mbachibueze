@@ -88,7 +88,7 @@ const Navigation = () => {
           <Link
             key={href}
             href={href}
-            className={`${isActive(href) ? "glass3  " : ""}`}
+            className={`${isActive(href) ? "glass3 " : ""}`}
           >
             <Icon size={13} />
             <p>{label}</p>

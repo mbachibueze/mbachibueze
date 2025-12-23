@@ -13,6 +13,7 @@ const tools = [
   "Framer Motion",
   "Git & GitHub",
   "EmailJs",
+  "AOS - Animate on Scroll",
 ]
 
 
