@@ -23,9 +23,9 @@ const Stack = () => {
 
   return (
     <div  className="w-[90%] lg:w-[60%] my-5">
-      <h1 className="font-bold mb-2 text-xl lg:text-3xl capitalize text-center">Skills & Tools </h1>
+      <h1 className="font-bold mb-2 text-xl lg:text-3xl capitalize text-center">Skills & Tools </h1> 
       <p className={`text-sm text-center ${description}`}>The set of technologies and tools leveraged to build efficient, high-performing, and user-focused applications</p>
-      <div className='flex  items-center justify-between text-center gap-2 flex-wrap py-2'>
+      <div className='flex  items-center justify-between text-center gap-2 flex-wrap my-2'>
         {tools.map((tool) => (
           <span className='text-sm glass4 px-2'>{tool}</span>
         ))}

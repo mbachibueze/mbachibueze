@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useContext } from "react";
 import { ThemeContext } from "@/src/context/themeContext";
 import { CircleX, ExternalLink } from "lucide-react";
@@ -20,19 +20,13 @@ const ProjectCardModal: React.FC<ProjectCardModalProps> = ({project, onClose}) =
   const description = theme === "dark" ? "text-[#b0b0b0]" : "text-[#4f4f4f]";
   const bg = theme === "dark" ? "bg-[#274f63]" : "bg-[#d8f1f5]";
 
-    // useEffect(() => {
-    //   // Freeze background scroll when modal is open
-    //   if (onOpen) {
-    //     document.body.style.overflow = "hidden";
-    //   } else {
-    //     document.body.style.overflow = "";
-    //   }
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
 
-    //   // Cleanup on unmount or dependency change
-    //   return () => {
-    //     document.body.style.overflow = "";
-    //   };
-    // }, [onOpen]);
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
 
 
   return (

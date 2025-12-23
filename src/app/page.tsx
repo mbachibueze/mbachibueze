@@ -14,6 +14,7 @@ import { HeroProjectCard } from "../components/ui/project/heroProjectCard";
 import { MoveRight } from 'lucide-react';
 import Link from "next/link";
 import Stack from "../components/ui/stack";
+import Contact from "../components/ui/contact";
 
 export default function Home() {
 
@@ -51,6 +52,8 @@ export default function Home() {
       <Service/>
 
       <Stack/>
+
+      <Contact/>
 
       <Footer/>
 

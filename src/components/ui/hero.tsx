@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -17,7 +16,7 @@ const Hero = () => {
         <div className=" flex flex-col items-center gap-7  lg:w-[50%] ">
 
           <div className="flex gap-2 items-center p-1 px-4 rounded-full border w-fit text-sm glass cursor-pointer">
-            <p className="font-bold">GitStack</p>
+            <p className="font-bold">CareTrack</p>
             <aside className="h-4 w-px bg-[#049ee24d]"></aside>
             <p className=" text-shadow-2xs  text-[#006ca8] font-medium">
               Featured work
