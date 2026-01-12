@@ -17,7 +17,7 @@ const links = [
   { href: "/", label: "Home", icon: House },
   { href: "/about", label: "About", icon: CircleUserRound },
   { href: "/work", label: "Work", icon: TableCellsSplit },
-  { href: "/gallery", label: "Gallery", icon: GalleryVerticalEnd },
+  { href: "/gallery", label: "Gallery", icon: GalleryVerticalEnd, prefetch: true },
 ];
 
 const Navigation = () => {
@@ -74,6 +74,7 @@ const Navigation = () => {
             key={href}
             href={href}
             className={`${isActive(href) ? "glass3 px-5 border border-[#5d5d5d]" : ""}`}
+            prefetch={true}
           >
             <Icon size={13} />
           </Link>
