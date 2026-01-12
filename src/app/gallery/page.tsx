@@ -46,7 +46,7 @@ const Gallery = () => {
         className="hover:scale-102 transition-transform duration-300 cursor-pointer rounded-2xl w-full"
       />
       <Image
-        src="/code2.svg"
+        src="/code56.svg"
         alt="mba chibueze coding"
         width={300}
         height={500}
@@ -67,7 +67,7 @@ const Gallery = () => {
         className="hover:scale-102 transition-transform duration-300 cursor-pointer rounded-2xl w-full row-span-2"
       />
             <div className="row-span-2">
-        <GalleryVideo src="/lafarge2.mp4"  />
+        <GalleryVideo src="/mainVideo.mp4"  />
       </div>
       <Image
         src="/code6.svg"
