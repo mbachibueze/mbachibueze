@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useState, ReactNode, useEffect } from "react";
 
 type Theme = "light" | "dark";
 
@@ -15,19 +15,20 @@ export const ThemeContext = createContext<ThemeContextType>({
 });
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  // Lazy initialization ensures localStorage is read BEFORE first render
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "dark";
+    return (localStorage.getItem("theme") as Theme) || "dark";
+  });
 
-  // Initialize theme from localStorage
+  // Sync the DOM whenever theme changes (this IS a valid effect)
   useEffect(() => {
-    const stored = (localStorage.getItem("theme") as Theme) || "dark";
-    setTheme(stored);
-    document.documentElement.classList.add(stored);
-  }, []);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme: Theme = theme === "dark" ? "light" : "dark";
-    document.documentElement.classList.remove(theme);
-    document.documentElement.classList.add(newTheme);
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };

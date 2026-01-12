@@ -3,7 +3,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "@/src/context/themeContext";
 import Link from "next/link";
-import Image from "next/image";
+
 import { CalendarDays, ChevronRight } from "lucide-react";
 
 
@@ -14,6 +14,7 @@ const Contact = () => {
   const description = theme === "dark" ? "text-[#b0b0b0]" : "text-[#4f4f4f]";
 
 
+   /* eslint-disable react/no-unescaped-entities */
   return (
     <div  className="w-[90%] lg:w-[60%] my-5 mt-10 flex flex-col items-center" > 
       <div className='glass4 p-5 py-8'>

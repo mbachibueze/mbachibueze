@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "@/src/context/themeContext";
 import Image from "next/image";
 import { Earth, CalendarDays, ChevronRight } from "lucide-react";
@@ -13,6 +13,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import Footer from "@/src/components/ui/footer";
+import SignInModal from "@/src/components/ui/signInModal";
 
 const contacts = [
   {
@@ -48,8 +49,21 @@ const About = () => {
   const english = theme === "dark" ? "bg-black" : "bg-white";
   const header = theme === "dark" ? "text-white" : "text-black";
 
+  const [showSignIn, setShowSignIn] = useState(false)
+
+  const handleSignInClick = () => {
+    setShowSignIn(true);
+  }
+
+
+   /* eslint-disable react/no-unescaped-entities */
   return (
     <main className="pt-5 lg:pt-25 grid place-items-center gap-5 ">
+
+      {showSignIn && (
+        <SignInModal onClose={() => setShowSignIn(false)} />
+      )}
+
       {/* Avatar & Location */}
       <div className="flex flex-col items-center gap-3">
         <Image
@@ -141,7 +155,7 @@ const About = () => {
         footprint in Software Engineering, driven by curiosity, precision, and a
         deep passion for building systems that work—whether mechanical
         structures or digital products. My journey sits at the intersection of
-        material science, industrial operations, and modern frontend
+        material science, <span onDoubleClick={handleSignInClick}>industrial operations</span> , and modern frontend
         development, giving my approach a rare blend of analytical depth and
         creative execution.
 

@@ -7,7 +7,6 @@ import {
   CircleUserRound,
   GalleryVerticalEnd,
   House,
-  LibraryBig,
   Sun,
   TableCellsSplit,
   Moon,
@@ -18,7 +17,6 @@ const links = [
   { href: "/", label: "Home", icon: House },
   { href: "/about", label: "About", icon: CircleUserRound },
   { href: "/work", label: "Work", icon: TableCellsSplit },
-  { href: "/blog", label: "Blog", icon: LibraryBig },
   { href: "/gallery", label: "Gallery", icon: GalleryVerticalEnd },
 ];
 
