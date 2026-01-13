@@ -23,7 +23,7 @@ export const Projects: Project[] = [
   },
   {
     id: "techCrib",
-    imageSrc: "/techCrib.png",
+    imageSrc: "/techCrib.svg",
     title: "TechCrib – Modern Agency Website",
     shortDescription:
       "A modern agency website built with Next.js and Tailwind CSS featuring smooth animations, responsive layouts, dynamic service sections, and a polished user experience across all devices.",
