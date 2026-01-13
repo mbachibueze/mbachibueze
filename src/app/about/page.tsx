@@ -66,13 +66,14 @@ const About = () => {
 
       {/* Avatar & Location */}
       <div className="flex flex-col items-center gap-3">
-        <Image
-          src="/about.svg"
-          alt="Mba Chibueze"
-          width={150}
-          height={200}
-          className="rounded-full border border-white/30"
-        />
+        <div className=" w-[150] h-[150] rounded-full relative">
+          <Image
+            src="/about.svg"
+            alt="Mba Chibueze"
+            fill
+            className="rounded-full border border-white/30"
+          />
+        </div>
 
         <p className="flex items-center gap-2 text-sm">
           <Earth size={15} className="text-[#2fc1ff]" />
@@ -174,20 +175,20 @@ const About = () => {
         effect of fiber orientation on the tensile strength, hardness, and
         impact resistance of epoxy-based composites. This research strengthened
         my understanding of how microstructural decisions influence real-world
-        performance—teaching the importance of experimentation, optimization,
+        performance teaching the importance of experimentation, optimization,
         and the relationship between design choices and material behavior. This
         transitioned seamlessly into field experience during my time at LaFarge
         Mfamosing Plant, where I worked with the maintenance and reliability
         teams. I was involved in testing and evaluating industrial shafts across
-        the entire processing line—from the crusher to the loading bay,
+        the entire processing line from the crusher to the loading bay,
         including conveyors, kiln assemblies, bucket lifts, and heavy-duty
         rotating machinery. This experience sharpened my mechanical intuition,
-        exposed me to large-scale engineering environments, and cultivated a
+        exposed me to large scale engineering environments, and cultivated a
         mindset geared toward reliability, system integrity, and preventive
         maintenance.
         <h3 className={`${header}`}>Transition Into Tech</h3>
-        Over time, my engineering mindset expanded into software—particularly
-        frontend engineering, where problem-solving, structure, and precision
+        Over time, my engineering mindset expanded into software particularly
+        frontend engineering, where problem solving, structure, and precision
         aligned naturally with technology. Today, I build high-performance
         digital products rooted in clean architecture, accessibility, and
         seamless user experience.
@@ -197,16 +198,16 @@ const About = () => {
           <li>• API integrations & data handling</li>
           <li>• Firebase</li>
           <li>
-            • Responsive UI engineering across devices—including
-            smartwatch-level constraints
+            • Responsive UI engineering across devices including
+            smartwatch level constraints
           </li>
-          <li>• Performance-first, scalable frontend architecture</li>
+          <li>• Performance first, scalable frontend architecture</li>
           <li>• Git, GitHub, Vercel</li>
         </ul>
         This gives me the ability to design and build interfaces that are not
         only visually appealing but also technically optimized and maintainable.
         <h3 className={`${header}`}>Philosophy & Work Approach</h3>
-        My engineering identity—both mechanical and software—is built around a
+        My engineering identity both mechanical and software is built around a
         few core beliefs:
         <ul className=" [&_span]:font-medium ml-5">
           <li>
@@ -221,13 +222,13 @@ const About = () => {
           </li>
           <li>
             • <span>Learning is continuous.</span> <br /> The transition from
-            mechanical engineering to software engineering was not a pivot—it
+            mechanical engineering to software engineering was not a pivot, it
             was an expansion. Curiosity remains my strongest tool.
           </li>
           <li>
             •
             <span>
-              Solutions should be simple, scalable, and human-centered.
+              Solutions should be simple, scalable, and human centered.
             </span>
             <br /> Engineering is not just science; it's service.
           </li>

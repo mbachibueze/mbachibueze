@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from "@/src/context/themeContext";
 import { CircleX, EyeClosed, Eye } from "lucide-react";
 
@@ -37,6 +37,14 @@ const SignInModal: React.FC<SignInModalProps> = ({onClose}) => {
     }
   }
 
+    useEffect(() => {
+      document.body.style.overflow = "hidden";
+  
+      return () => {
+        document.body.style.overflow = "";
+      };
+    }, []);
+
 
   return (
     <div className='fixed inset-0 z-50'>
@@ -65,7 +73,7 @@ const SignInModal: React.FC<SignInModalProps> = ({onClose}) => {
               onChange={(e) => setUsername(e.target.value)}
             />
 
-            <div className="flex items-center bg-black/20 rounded pr-2 gap-2 w-full relative">
+            <div className="flex items-center bg-black/20 rounded  gap-2 w-full relative">
               <input
                 type={showPassword ? "text" : "password"}
                 className="bg-transparent flex-1"
@@ -73,7 +81,7 @@ const SignInModal: React.FC<SignInModalProps> = ({onClose}) => {
                 onChange={(e) => setPassword(e.target.value)}
               />
 
-              <div className=' absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-full'>
+              <div className=' absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full'>
                 {showPassword ? (
                   <EyeClosed
                     size={15}
