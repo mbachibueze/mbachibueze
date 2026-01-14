@@ -4,6 +4,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { cn } from "../lib/utils";
 import { ThemeProvider } from "../context/themeContext";
+import { Toaster } from "@/components/ui/sonner"
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navigation />
           <div className="background-gradient h-screen  ">{children}</div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
