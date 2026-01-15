@@ -2,6 +2,9 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider  } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { setPersistence, browserLocalPersistence } from "firebase/auth";
+
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -19,5 +22,7 @@ const auth = getAuth();
 const db = getFirestore(app);
 const storage = getStorage(app);
 const googleProvider = new GoogleAuthProvider();
+
+setPersistence(auth, browserLocalPersistence);
 
 export { app, auth, db, storage, googleProvider };

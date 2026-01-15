@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Navigation from "../components/ui/navigation";
 import { Manrope } from "next/font/google";
@@ -5,6 +6,9 @@ import "./globals.css";
 import { cn } from "../lib/utils";
 import { ThemeProvider } from "../context/themeContext";
 import { Toaster } from "@/components/ui/sonner"
+
+
+
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -14,7 +18,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Mba Chibueze",
-  description: "Portfolio of Mba Chibueze - Full-Stack Developer specializing in Next.js, React, and TypeScript. Showcasing projects, skills, and contact information.",
+  description: "Portfolio of Mba Chibueze - Frontend Developer specializing in Next.js, React, and TypeScript. Showcasing projects, skills, and contact information.",
   icons: {
     icon: "favicon.svg",
   },

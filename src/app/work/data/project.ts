@@ -22,11 +22,11 @@ export const Projects: Project[] = [
     link: "https://brela.vercel.app/",
   },
   {
-    id: "techCrib",
+    id: 'TechCrib-projects',
     imageSrc: "/techCrib.svg",
     title: "TechCrib – Modern Agency Website",
-    shortDescription:
-      "A modern agency website built with Next.js and Tailwind CSS featuring smooth animations, responsive layouts, dynamic service sections, and a polished user experience across all devices.",
+    shortDescription: 
+    "A modern agency website built with Next.js and Tailwind CSS featuring smooth animations, responsive layouts, dynamic service sections, and a polished user experience across all devices.",
     longDescription: `TechCrib is a modern digital agency website designed to highlight services, projects, and brand identity with a clean and premium UI. Built using Next.js, TypeScript, Tailwind CSS, and Framer Motion, the site focuses on performance, fast transitions, and a visually engaging layout. It features reusable components, dynamic content sections, responsive grids, and a structured workflow that mirrors real-world agency website standards. The design emphasizes clarity, minimalism, and multi-device accessibility.`,
     techStack: ["Next.js", "Typescript", "Tailwind"],
     link: "https://techcrib.vercel.app/",

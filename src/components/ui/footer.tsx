@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+
 import { Mail } from "lucide-react";
 import { FaXTwitter, FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa6";
+
 
 const contacts = [
   { href: "https://github.com/mbachibueze", icon: FaGithub },
@@ -16,6 +17,12 @@ const contacts = [
 ];
 
 const Footer = () => {
+
+
+
+    // Clock state
+  const year = new Date().getFullYear();
+
   return (
     <main className="bg-transparent grid place-items-center pb-25 lg:pb-0 lg:w-[70%] w-[90%]">
       <div
@@ -26,7 +33,7 @@ const Footer = () => {
         "
       >
         <div className="text-sm flex items-center gap-1">
-          <span className="text-[#6d6d6d]">© 2025</span>
+          <span className="text-[#6d6d6d]">© {year}</span>
           <span>/ Mba Chibueze</span>
         </div>
 

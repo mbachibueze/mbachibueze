@@ -108,14 +108,16 @@ const AdminPage = () => {
             </div>
             <hr className='my-1' />
             <div className='flex items-center gap-2 w-full justify-between'>
-              <p className="
-                text-gray-400 
-                  max-h-4 
-                  hover:max-h-96 
-                  transition-all 
-                  duration-500 
+              
+              <p className={`
+                text-gray-400
+                  max-h-4
+                  hover:max-h-96
+                  transition-all
+                  duration-500
                   overflow-hidden
-                ">
+                  ${message.read ? '' : 'blur-sm'}
+              `}>
                 {message.message}
               </p>
               <div>

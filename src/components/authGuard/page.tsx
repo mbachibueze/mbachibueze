@@ -26,7 +26,9 @@ const AdminAuthGuard = ({ children }: Props) => {
     return () => unsubscribe();
   }, [router]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div className="w-full h-full grid place-items-center">
+    <p className="font-semibold">Loading Admin...</p>
+  </div>;
   if (!authorized) return null;
 
   return <>{children}</>;
