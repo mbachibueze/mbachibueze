@@ -31,13 +31,22 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://mbachibueze.vercel.app/og-image.png",
-        width: 1348,
-        height: 678,
+        width: 1200,
+        height: 630,
         alt: "Mba Chibueze's Portfolio Preview"
       },
     ],
     type: 'website'
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mba Chibueze",
+    description:
+      "Portfolio of Mba Chibueze - Frontend Developer specializing in Next.js, React, and TypeScript.",
+    images: ["https://mbachibueze.vercel.app/og-image.png"],
+  },
+
 
 };
 
