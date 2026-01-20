@@ -23,6 +23,22 @@ export const metadata: Metadata = {
     icon: "favicon.svg",
   },
 
+  openGraph: {
+    title: "Mba Chibueze",
+    description: "Portfolio of Mba Chibueze - Frontend Developer specializing in Next.js, React, and TypeScript. Showcasing projects, skills, and contact information.",
+    url: "https://mbachibueze.vercel.app",
+    siteName: "Mba Chibueze",
+    images: [
+      {
+        url: "https://mbachibueze.vercel.app/og-image.png",
+        width: 1348,
+        height: 678,
+        alt: "Mba Chibueze's Portfolio Preview"
+      },
+    ],
+    type: 'website'
+  },
+
 };
 
 export default function RootLayout({

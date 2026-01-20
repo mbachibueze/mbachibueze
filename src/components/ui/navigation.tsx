@@ -52,7 +52,7 @@ const Navigation = () => {
     <main
       className={`flex justify-around md:justify-between p-2 items-center text-sm fixed w-full bottom-6 md:top-3 md:bottom-auto z-50`}
     >
-      <p className="hidden md:block">Africa/Abuja</p>
+      <p className="hidden md:block">Africa/Port Harcourt</p>
 
       <nav
         className={`p-1 glass2  rounded-full flex items-center gap-1 

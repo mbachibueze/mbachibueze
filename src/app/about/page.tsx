@@ -77,7 +77,7 @@ const About = () => {
 
         <p className="flex items-center gap-2 text-sm">
           <Earth size={15} className="text-[#2fc1ff]" />
-          Africa / Abuja
+          Africa / Port Harcourt
         </p>
 
         <p
