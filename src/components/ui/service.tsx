@@ -22,6 +22,18 @@ const services = [
     details:
       "Integrate dynamic data from RESTful or GraphQL APIs, enabling real-time updates, content management, form submissions, authentication, and more. Perfect for portfolios, dashboards, or business platforms that need interactive features.",
   },
+  {
+    id: "admin-dashboards",
+    type: "Dashboards",
+    details:
+      "Create intuitive and responsive dashboards for managing content, users, analytics, and more. Built with modern frontend frameworks to ensure a seamless user experience.",
+  },
+  {
+    id: "e-commerce",
+    type: "E-commerce Frontends",
+    details:
+      "Design and develop visually appealing and user-friendly e-commerce frontends. Integrate with popular platforms like Shopify, WooCommerce, or custom backends to create a seamless shopping experience.",
+  }
 ];
 
 const Service = () => {

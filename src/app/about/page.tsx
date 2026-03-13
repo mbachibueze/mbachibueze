@@ -92,6 +92,7 @@ const About = () => {
       </div>
 
       {/* Schedule CTA */}
+      
       <button
         className="
           flex glass items-center gap-2 text-sm border p-1 pl-3 rounded-full w-fit
@@ -158,7 +159,7 @@ const About = () => {
         structures or digital products. My journey sits at the intersection of
         material science, <span onDoubleClick={handleSignInClick}>industrial operations</span> , and modern frontend
         development, giving my approach a rare blend of analytical depth and
-        creative execution.
+        creative execution. Currently building Grovah — a multi-tenant SaaS e-commerce platform with admin dashboard, Paystack integration, and financial analytics.
 
         <h2 className={`${header} mt-5 font-semibold text-xl `}>Studies</h2>
         <h2 className={`${header} font-medium sm:text-lg`}>
