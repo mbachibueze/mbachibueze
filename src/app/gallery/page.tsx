@@ -1,16 +1,10 @@
 'use client'
 
 import GalleryVideo from "@/src/components/galleryVideo";
-import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 
-export const metadata: Metadata = {
-  title: "Gallery",
-  description:
-    "A visual archive of Mba Chibueze — from industrial work at LaFarge Mfamosing Plant to coding setups. A glimpse into the journey from mechanical engineering to software.",
-  alternates: { canonical: "https://mbachibueze.vercel.app/gallery" },
-};
+
 
 const Gallery = () => {
   return <main  className="pt-5   lg:pt-20 grid place-items-center gap-5 lg:w-[80%] w-[90%]  m-auto">

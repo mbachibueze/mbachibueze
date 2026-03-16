@@ -7,14 +7,8 @@ import { ProjectCard } from "@/src/components/ui/project/projectCard";
 import { Project, Projects } from "@/src/app/work/data/project";
 import { AnimatePresence } from "framer-motion";
 import Footer from "@/src/components/ui/footer";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Projects",
-  description:
-    "Explore projects by Mba Chibueze — including CareTrack (healthcare platform), TechCrib, Brela Agency clone, and Eazzi Exchange. Built with Next.js, TypeScript, and Firebase.",
-  alternates: { canonical: "https://mbachibueze.vercel.app/work" },
-};
+
 
 const Work = () => {
 
