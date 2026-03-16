@@ -14,6 +14,14 @@ import {
 } from "react-icons/fa6";
 import Footer from "@/src/components/ui/footer";
 import SignInModal from "@/src/components/ui/signInModal";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about Mba Chibueze — a Mechanical Engineer turned Frontend Engineer from Port Harcourt, Nigeria. B.Eng from MOUAU, ex-LaFarge engineer, now building scalable web apps with Next.js and React.",
+  alternates: { canonical: "https://mbachibueze.vercel.app/about" },
+};
 
 const contacts = [
   {
