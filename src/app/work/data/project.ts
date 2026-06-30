@@ -12,6 +12,16 @@ export type Project = {
 
 export const Projects: Project[] = [
   {
+    id: "grovah",
+    imageSrc: "/grovah.png",
+    title: "Grovah - B2B Commerce Infrastructure Platform",
+    shortDescription:
+      "A SaaS commerce platform built for Nigerian independent sellers and small businesses, featuring a branded storefront, real-time financial analytics, inventory management, and integrated payments.",
+    longDescription: `Grovah is a B2B SaaS commerce infrastructure platform designed for Nigerian independent sellers and small businesses. Built with Next.js, TypeScript, and Tailwind CSS, it gives sellers a branded storefront, real-time profit and financial analytics powered by Recharts, and full inventory and order management — all in one place. The platform integrates Paystack for payments and uses Firebase for backend services, with a role-based system (super admin, store admin, assistant) and JWT-secured middleware for multi-tenant access. Grovah's goal is to replace the scattered workflow of spreadsheets, DMs, and payment links that most small sellers rely on, with a single tool built around their actual business needs.`,
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Paystack"],
+    link: "https://grovah.com",
+  },
+  {
     id: "brela",
     imageSrc: "/brela.png",
     title: "Brela - An Agency Website Clone",

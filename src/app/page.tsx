@@ -34,7 +34,7 @@ export default function Home() {
 
 
       <div className="w-[90%] lg:w-[60%] m-auto my-5 flex flex-col  ">
-        {Projects.slice(2,3).map((project) => (
+        {Projects.slice(0,1).map((project) => (
           <HeroProjectCard
           key={project.id}
           project={project}

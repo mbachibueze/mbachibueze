@@ -16,11 +16,11 @@ const Hero = () => {
         <div className=" flex flex-col items-center gap-7  lg:w-[50%] ">
 
           <Link 
-          href="https://caretrack-25.vercel.app/"
+          href="https://grovah.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex gap-2 items-center p-1 px-4 rounded-full border w-fit text-sm glass cursor-pointer">
-            <p className="font-bold">CareTrack</p>
+            <p className="font-bold">Grovah</p>
             <aside className="h-4 w-px bg-[#049ee24d]"></aside>
             <p className=" text-shadow-2xs  text-[#006ca8] font-medium">
               Featured work
